@@ -8,5 +8,4 @@ Git development began in April 2005, after many developers of the Linux kernel g
 Linus Torvalds wanted a distributed system that he could use like BitKeeper, but none of the available free systems met his needs, especially for performance. Torvalds cited an example of a source-control management system needing 30 seconds to apply a patch and update all associated metadata, and noted that this would not scale to the needs of Linux kernel development, where syncing with fellow maintainers could require 250 such actions at once. For his design criteria, he specified that patching should take no more than three seconds,[8] and added three more points:
 
 Take Concurrent Versions System (CVS) as an example of what not to do; if in doubt, make the exact opposite decision[10]
-Support a distributed, BitKeeper-like workflow[10]
 Include very strong safeguards against corruption, either accidental or malicious[9]
