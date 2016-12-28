@@ -4,8 +4,9 @@ Some deletions some additions
 
 Git (/ɡɪt/[6]) is a version control system (VCS) for tracking changes in computer files and coordinating work on those files among multiple people. It is primarily used for software development,[7] but it can be used to keep track of changes in any files. As a distributed revision control system it is aimed at speed,[8] data integrity,[9] and support for distributed, non-linear workflows.[10]
 
-Git was created by Linus Torvalds in 2005 for development of the Linux kernel, with other kernel developers contributing to its initial development.[11] Its current maintainer is Junio Hamano.
+Git development began in April 2005, after many developers of the Linux kernel gave up access to BitKeeper, a proprietary source control management (SCM) system that they had formerly used to maintain the project.[13] The copyright holder of BitKeeper, Larry McVoy, had withdrawn free use of the product after claiming that Andrew Tridgell had reverse-engineered the BitKeeper protocols.[14]
 
-As with most other distributed version control systems, and unlike most client–server systems, every Git directory on every computer is a full-fledged repository with complete history and full version tracking abilities, independent of network access or a central server.[12]
+Linus Torvalds wanted a distributed system that he could use like BitKeeper, but none of the available free systems met his needs, especially for performance. Torvalds cited an example of a source-control management system needing 30 seconds to apply a patch and update all associated metadata, and noted that this would not scale to the needs of Linux kernel development, where syncing with fellow maintainers could require 250 such actions at once. For his design criteria, he specified that patching should take no more than three seconds,[8] and added three more points:
 
-Like the Linux kernel, Git is free software distributed under the terms of the GNU General Public License version 2.
+Take Concurrent Versions System (CVS) as an example of what not to do; if in doubt, make the exact opposite decision[10]
+Include very strong safeguards against corruption, either accidental or malicious[9]
